@@ -4,6 +4,17 @@
 <body>
   <a href="../index.html">Back</a>
   <br><hr><br>
-  <input type="text" name="text"/>
-  <button>Backwards</button>
+  <input type="text" name="text" id="input"/>
+  <button id="btn" onclick="backwards();">Backwards</button>
+
+  <script>
+    var input = document.getElementById('input');
+    var btn = document.getElementById('btn');
+
+    function backwards()
+    {
+      if (input.innterHTML.trim().length == 0) alert('No text!');
+      else alert(input.innterHTML);
+    }
+  </script>
 </body>
